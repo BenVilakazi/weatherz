@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <input autocomplete="off" spellcheck="false" type="text" id="city" />
+          <label for="city">City Name (Required)</label>
+        </div>
+        <div>
+          <input autocomplete="off" spellcheck="false" type="text" id="state" />
+          <label for="state">State Code (Optional)</label>
+        </div>
+        <div>
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            type="text"
+            id="country"
+          />
+          <label for="country">Country Code (Optional)</label>
+        </div>
+        <div>
+          <button class="save-location">Save</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="app-top-row">
+        <section class="left-column">
+          <div class="weather-icon">
+            <img src="https://images.unsplash.com/photo-1556262298-e85892643712?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80assets/rain.png" alt="Rain Weather Icon" />
+          </div>
+          <div class="weather-condition"></div>
+          <div class="city"></div>
+          <div class="temperature"></div>
+          <a href="#" class="location">
+            <i class="gg-pin"></i>
+            <div class="change-location">Change location</div>
+          </a>
+        </section>
+        <section class="right-column">
+          <dl class="humidity">
+            <dt class="label">Humidity</dt>
+            <dd class="value"></dd>
+          </dl>
+          <dl class="air-pressure">
+            <dt class="label">Air Pressure</dt>
+            <dd class="value"></dd>
+          </dl>
+          <dl class="chance-of-rain">
+            <dt class="label">Chance of Rain</dt>
+            <dd class="value"></dd>
+          </dl>
+          <dl class="wind-speed">
+            <dt class="label">Wind Speed</dt>
+            <dd class="value"></dd>
+          </dl>
+        </section>
+      </section>
+      <section class="app-bottom-row">
+        <section class="top-row">
+          <a href="#" class="nav-back">
+            <i class="gg-chevron-left"></i>
+            <div class="day"></div>
+          </a>
+        </section>
+        <section class="bottom-row">
+          <div class="scrolling-wrapper">
+            <div id="card-1" class="card active-card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-2" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-3" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-4" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-5" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-6" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-7" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+            <div id="card-8" class="card">
+              <div class="card-time"></div>
+              <div class="card-temperature"></div>
+              <div class="card-feels-like"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
